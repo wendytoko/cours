@@ -1,0 +1,37 @@
+package test;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class MyServlet extends HttpServlet{
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		
+		String nom = req.getParameter("nom");
+		PrintWriter out = resp.getWriter();
+		out.println("<html><body>");
+		out.println("<h1>"+ nom + "</h1>");
+		out.println("<p>La plus gentille des Team Leader</p>");
+		out.println("</body></html>");
+		
+		
+		
+		
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		req.getRequestDispatcher("Bouton.jsp").forward(req, resp);
+		
+	}
+	
+
+}

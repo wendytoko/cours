@@ -1,0 +1,40 @@
+package managedBeans;
+
+public class ManagedBeans {
+	
+	private String nomProduit;
+	private float prixProduit;
+	
+	
+	
+	public ManagedBeans() {
+		
+	}
+	
+	
+	public void ajouter() {
+		
+		System.out.println("nom produit : "+ this.getNomProduit() + "prix du produit : " + this.getPrixProduit());
+	}
+	
+	
+	public String getNomProduit() {
+		return nomProduit;
+	}
+	public void setNomProduit(String nomProduit) {
+		this.nomProduit = nomProduit;
+	}
+
+
+	public float getPrixProduit() {
+		return prixProduit;
+	}
+
+
+	public void setPrixProduit(float prixProduit) {
+		this.prixProduit = prixProduit;
+	}
+	
+	
+
+}

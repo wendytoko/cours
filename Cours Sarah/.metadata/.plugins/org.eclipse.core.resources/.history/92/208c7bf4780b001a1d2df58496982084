@@ -1,0 +1,5 @@
+package coucheDao;
+
+public interface IDao {
+
+}

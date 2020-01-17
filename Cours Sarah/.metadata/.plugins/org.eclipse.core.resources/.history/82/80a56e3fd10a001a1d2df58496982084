@@ -1,0 +1,79 @@
+package connexion;
+
+public class Connexion {
+	
+
+	import java.sql.Connection;
+	import java.sql.DriverManager;
+	import java.sql.SQLException;
+
+		
+		/*--------------------------------------------------------------------*/
+		/*----Informations qui nous permettent de nous connecter à la BDD----*/
+		/*------------et d'obtenir le pilote--------------------------------*/
+		/*-----------------------------------------------------------------*/
+
+		
+		static String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+		static String URL_BDD = "jdbc:mysql://localhost:3306/bdd_tp_2";
+		static String USER_NAME = "root";
+		static String PASSWORD = "wendy";
+		
+		
+		/*--------------------------------------------------------------------*/
+		/*-----------Constructeur qui va permettre de créer une connexion----*/
+		/*------------------------------------------------------------------*/
+		
+		Connexion(){
+			
+		}
+		
+		
+		/*-----------------------------------------------------------------------*/
+		/*--Déclaration d'une variable qui va permettre de créer une connexion--*/
+		/*---------------------------------------------------------------------*/
+		
+		static Connection connexion;
+		
+		/*-----------------------------------------------------------------------*/
+		/*---Déclaration d'une méthode qui va permettre de créer une connexion--*/
+		/*---------------------------------------------------------------------*/
+		
+		
+		public static Connection getConnection() {
+			
+			
+			
+			try {
+				
+				/* 1. chargement du pilote */
+				Class.forName(JDBC_DRIVER);
+				
+				/* 2. Etablissement de la connexion */
+				
+				connexion = DriverManager.getConnection(URL_BDD, USER_NAME, PASSWORD);
+				
+				return connexion;
+				
+				
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+			
+			
+			return null;
+			
+		}// fin getConnection
+		
+		
+		
+	}// fin classe
+
+
+

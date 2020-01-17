@@ -1,0 +1,45 @@
+package managedBeans;
+
+import javax.faces.application.FacesMessage;
+import javax.faces.context.FacesContext;
+
+public class ManagedBeans {
+	
+	private String nomProduit;
+	private float prixProduit;
+	
+	
+	
+	public ManagedBeans() {
+		
+	}
+	
+	
+	public void ajouter() {
+		FacesContext fcontent = FacesContext.getCurrentInstance();
+		fcontent.addMessage(null, new FacesMessage("Produit ajouté : " + nomProduit + " " + prixProduit));
+		
+		System.out.println("nom produit : "+ this.getNomProduit() + "prix du produit : " + this.getPrixProduit());
+	}
+	
+	
+	public String getNomProduit() {
+		return nomProduit;
+	}
+	public void setNomProduit(String nomProduit) {
+		this.nomProduit = nomProduit;
+	}
+
+
+	public float getPrixProduit() {
+		return prixProduit;
+	}
+
+
+	public void setPrixProduit(float prixProduit) {
+		this.prixProduit = prixProduit;
+	}
+	
+	
+
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="01_introduction_jpa-eclipselink">
+	
+	<!--  Déclaration de l'implémentation concrète de JPA : le provider EclipseLink -->
+	
+	<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+	
+	<!-- Déclaration des classes Entity -->
+	
+	<class>com.intiformation.introjpa.entity.Formateur</class>
+	<class>com.intiformation.introjpa.entity.optimisationMapping.Enseignant</class>
+	
+	
+	<!--  Déclaration des infos de connexion à la BDD via des ptés JPA -->
+	
+	<properties>
+	<!--  infos bdd -->
+	<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/db_cours_jpa_eclipselink"/>
+	<property name="javax.persistence.jdbc.user" value="root"/>
+	<property name="javax.persistence.jdbc.password" value="wendy"/>
+	<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+	
+	
+	
+	
+	
+	
+	<!-- Statégie de génération des tables dans la bdd -->
+	
+	<!-- 
+	
+	Valeur de la pté :
+		- none : pas de création ni de supp
+		- create : le provider crée les tables au déploiement. Pas de changement après déploiement
+		- drop-and-create : suppression et recréation au délpoiement
+		- drop : suppression au délpoiement
+		
+	 -->
+	<property name="javax.persistence.schema-generation.database.action" value="create"/>
+	
+	<!--  affichage des requetes SQL faites dans la console -->
+	
+	<property name="eclipselink.logging.level" value="FINE"/>
+	
+	</properties>
+	</persistence-unit>
+</persistence>

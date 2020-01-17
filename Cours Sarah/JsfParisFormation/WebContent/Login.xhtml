@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html  xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<p:panel header="login"  style="width:50%;margin-left:25%;margin-top:10%">
+<p:growl id="growl" showDetail="true"  sticky="true"/>
+<h:form>
+		
+	<p:panelGrid columns="1" style="width:100%">
+		<h:outputText value="Login" />
+		<p:inputText id="username" value="#{userMB.usermodel.login}"></p:inputText>
+		<h:message for="username"></h:message>
+	
+		
+		<h:outputText value="Password" />
+		<p:password id="password" value="#{userMB.usermodel.mdp}"></p:password>
+		<h:message for="password"></h:message>
+	</p:panelGrid>	
+		<p:panel>
+		<p:commandButton action="#{userMB.login()}"
+			value="Login" update="growl"></p:commandButton>
+	    </p:panel>
+	</h:form>
+
+</p:panel>
+
+</body>
+</html>

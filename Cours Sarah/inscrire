@@ -1,0 +1,11 @@
+﻿User u=service.getUserByLogin(usermodel.getLogin());
+		if(u==null) {
+		service.inscription(usermodel);
+		FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO,
+				"Succès inscription", "Vous êtes inscrit !"));
+		}else {
+			
+			FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_FATAL,
+					"Erreur inscription", "Vous êtes déjà inscrit !"));
+			
+		}

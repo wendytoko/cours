@@ -1,0 +1,89 @@
+package test;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+
+import connexion.Connexion;
+
+public class MyServlet extends HttpServlet{
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		
+		String nom = req.getParameter("nom");
+		String prenom = req.getParameter("prenom");
+		PrintWriter out = resp.getWriter();
+		out.println("<html><body>");
+		out.println("<h1>"+ nom + "</h1>");
+		out.println("<h1>" + prenom + "</h1>");
+		out.println("</html></body>");
+		
+			
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String nom = req.getParameter("nom");
+		String prenom = req.getParameter("prenom");
+		
+		Connection connexion = Connexion.getConnection();
+		
+		
+		PreparedStatement ps = null;
+		String addReq = "INSERT INTO personne (nom,prenom) VALUES (?,?)";
+		
+		
+			
+			try {
+				System.out.println(ps);
+				ps = connexion.prepareStatement(addReq);
+			} catch (SQLException e2) {
+				// TODO Auto-generated catch block
+				e2.printStackTrace();
+			}
+
+			
+			try {
+				ps.setString(1, req.getParameter("nom"));
+			} catch (SQLException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+			try {
+				ps.setString(2, req.getParameter("prenom"));
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			try {
+				int verifAdd = ps.executeUpdate();
+				System.out.println("L'ajout dans la base de données a été un succès !");
+			
+				
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		
+			
+			
+		req.getRequestDispatcher("Recup.jsp").forward(req, resp);
+		
+		
+	}
+	
+	
+	
+
+}

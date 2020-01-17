@@ -1,0 +1,58 @@
+package connexion;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+
+public class Connexion {
+
+	static String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+	static String URL_BDD = "jdbc:mysql://localhost:3306/bdd_tp_2";
+	static String USER_NAME = "root";
+	static String PASSWORD = "wendy";
+	
+	Connexion(){
+		
+	}// fin ctor
+	
+	public static Connection connexion;
+	
+public static Connection getConnection() {
+		
+		
+		
+		try {
+			
+			/* 1. chargement du pilote */
+			Class.forName(JDBC_DRIVER);
+			
+			/* 2. Etablissement de la connexion */
+			
+			connexion = DriverManager.getConnection(URL_BDD, USER_NAME, PASSWORD);
+			
+			return connexion;
+			
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+		return null;
+		
+	}// fin getConnection
+	
+	
+	
+}// fin classe
+	
+
+
+

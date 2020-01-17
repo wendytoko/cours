@@ -1,0 +1,19 @@
+ahahahahahaahahah
+
+-------------------------------------------------------------------
+			LANGAGE JPQL : Java Persistance Query Language
+-------------------------------------------------------------------
+
+> interaction avec la BDD => Entity Manager et ses méthodes (persist, find, etc)
+
+Ce sont des méthodes où on est obligé de manipuler chaque entité de manière individuelle. 
+On ne peut pas faire de gatAll() !
+
+Pour réaliser ce genre d'opération, JPA propose un langage de requêtes nommé JPQL.
+
+	> JPQL est une sous-couche du SQL. 
+	  JPQL va taper sur les entités (SELECT e from Employe e => Employe : nom de l'entité
+	   pendant que SQL tape sur les tables (SELECT * FROM employe => employe : nom de la table.
+	
+	
+		

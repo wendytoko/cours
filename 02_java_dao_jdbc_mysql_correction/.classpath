@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="02_java_dao_jdbc_mysql/src"/>
+	<classpathentry kind="lib" path="02_java_dao_jdbc_mysql/lib/mysql-connector-java-5.1.38-bin.jar"/>
+	<classpathentry kind="output" path="02_java_dao_jdbc_mysql/bin"/>
+</classpath>

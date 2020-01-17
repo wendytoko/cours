@@ -1,0 +1,18 @@
+package connexion;
+
+public class Connexion {
+
+	static String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+	static String URL_BDD = "jdbc:mysql://localhost:3306/bdd_tp_2";
+	static String USER_NAME = "root";
+	static String PASSWORD = "wendy";
+	
+	
+	
+	
+	
+}// fin classe
+	
+
+
+

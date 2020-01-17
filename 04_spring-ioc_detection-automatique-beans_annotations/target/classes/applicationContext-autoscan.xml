@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<!-- +++++ CONFIGURATION PAR XML ++++++++++++++++++++++++++++ -->
+	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+	<!-- ==================================================== -->
+	<!-- Déclaration des beans de type de la classe Employe   -->
+	<!-- ==================================================== -->
+	<bean id="employeBean1" class="com.intiformation.springioc.autoscan.bean.Employe">
+		<property name="idEmploye" value="1"/>
+		<property name="nom" value="Searlas Chatigny"/>
+		<property name="salaire" value="75000.00"/>
+	</bean>
+	
+	<bean id="employeBean2" class="com.intiformation.springioc.autoscan.bean.Employe">
+		<property name="idEmploye" value="2"/>
+		<property name="nom" value="Antoinette Durand"/>
+		<property name="salaire" value="60000.00"/>
+	</bean>
+	
+	<!-- ==================================================== -->
+	<!-- Déclaration du bean de type de la classe EmployeDAO   -->
+	<!-- ==================================================== -->
+	<bean id="employeDaoBean" class="com.intiformation.springioc.autoscan.dao.EmployeDAO">
+		<!-- 
+		     injection des beans des employes 'employeBean1' et 'employeBean2' dans 
+		     la prop 'employeDB' du bean employeDaoBean
+		 -->
+		<property name="employesDB">
+			<list>
+				<ref bean="employeBean1"/>
+				<ref bean="employeBean2"/>
+			</list>	
+		</property>
+	</bean>
+	
+	<!-- ========================================================= -->
+	<!-- Déclaration du bean de type de la classe EmployeService   -->
+	<!-- ========================================================= -->
+	<bean id="employeServiceBean" 
+	      class="com.intiformation.springioc.autoscan.service.EmployeService">
+	      
+	    <!-- 
+	    	injection du bean de la dao 'employeDaoBean' dans la prop 'employDAO' 
+	    	du bean du service 'employeServiceBean'	
+	    -->
+	    <property name="employeDAO" ref="employeDaoBean"/>
+	      
+	</bean>
+	
+	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<!-- +++++ CONFIGURATION PAR ANNOTATIONS +++++++++++++++++++++ -->
+	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<!-- 
+		1. étape 1 : ajout des annotations dans les classe  
+			
+				> @component : pour déclarer les beans 
+				> @Autowired : pour l'injection automatique 	
+	-->
+	
+	<!-- 
+		étape 2 : activation de la détection automatique des annotations : @Autowired
+	 -->
+	<context:annotation-config/>
+	
+	<!-- 
+		étape 3 : activation de la détection des beans de spring : @component 
+	 -->
+	 <context:component-scan base-package="com.intiformation.springioc.autoscan"/>
+	 
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+

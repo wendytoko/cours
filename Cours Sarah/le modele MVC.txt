@@ -1,0 +1,8 @@
+Le modele MVC
+---------------------
+
+Model : des classes qui servent à stocker ou retourner des données
+View : la page JSP, on y affiche les données
+Controller : la servlet = api comme jdbc, spécification jee. Chaque framework doit implémenter cette api comem controller.
+
+ 

@@ -1,0 +1,40 @@
+package coucheDao;
+
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+import modeleDao.Personne;
+
+public class CoucheDao implements IDao<Personne> {
+
+	@Override
+	public List<Personne> getAll() {
+
+		ResultSet rs = null;
+		Personne personne;
+		List<Personne> liste = new ArrayList();
+		
+
+		return null;
+	}
+
+	@Override
+	public boolean add(Personne t) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean update(Personne t) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean delete(int id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

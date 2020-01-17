@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+    version="2.2">
+	<component>
+	</component>
+	<converter>
+		<display-name>converters.NameConverter</display-name>
+		<converter-id>converters.NameConverter</converter-id>
+		<converter-class>converters.NameConverter</converter-class>
+	</converter>
+	<converter>
+	</converter>
+	<managed-bean>
+		<managed-bean-name>produit</managed-bean-name>
+		<managed-bean-class>modele.ProduitManagedBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>userMB</managed-bean-name>
+		<managed-bean-class>modele.UserManagedBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<validator>
+		<display-name>validators.Validators</display-name>
+		<validator-id>validators.Validators</validator-id>
+		<validator-class>validators.Validators</validator-class>
+	</validator>
+
+</faces-config>

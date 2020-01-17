@@ -1,0 +1,4 @@
+INDEX VERSION 1.4+C:\Users\IN-MP-040\Desktop\Cours Sarah\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+948715729.index
+1657330681.index
+3974585616.index

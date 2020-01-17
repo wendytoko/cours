@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 
+		> Portées (scope) des beans : 
+		
+				>> Singleton : un seul bean est crée à chaque invocation de getBean()
+					
+						>>>> Portée par défaut 
+						>>>> déf de la portée => l'atrribut 'scope' de la balise <bean>
+				
+				>> Prototype : une nouveau bean est crée à chaque invocation de getBean()
+				
+						>>>> déf de la portée => l'atrribut 'scope' de la balise <bean>
+	 -->
+	
+	
+
+	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<!-- ++ Déclaration de beans de type de la classe Produit ++ -->
+	<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	
+	<!-- 1er bean (composant) spring [objet java] -->
+	<bean id="produitBean1" class="com.intiformation.springioc.portee.bean.Produit">
+		<!-- injection de dépendances par setters -->
+		<property name="nom" value="iphone 11"/>
+		<property name="prix" value="1200"/>
+	</bean>
+	
+	<!-- 2eme bean (composant) spring [objet java] -->
+	<bean id="produitBean2" class="com.intiformation.springioc.portee.bean.Produit">
+		<!-- injection de dépendances par setters -->
+		<property name="nom" value="Galaxy S10"/>
+		<property name="prix" value="1000"/>
+	</bean>
+	
+	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<!-- ++ Déclaration de beans de type de la classe Panier ++ -->
+	<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<!-- déclaration du bean sans l'injection de dépendances -->
+	<bean id="panierBean" class="com.intiformation.springioc.portee.bean.Panier" 
+	      scope="prototype"/>
+
+</beans>

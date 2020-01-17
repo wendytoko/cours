@@ -1,0 +1,20 @@
+<p:panel header="Créer votre compte"  style="width:50%;margin-left:25%;margin-top:10%">
+<p:growl id="growl" showDetail="true"  sticky="true"/>
+<h:form>
+		
+	<p:panelGrid columns="1" style="width:100%">
+		<h:outputText value="Login" />
+		<p:inputText id="username" value="#{userMB.usermodel.login}"></p:inputText>
+		<h:message for="username"></h:message>
+	
+		
+		<h:outputText value="Password" />
+		<p:password id="password" value="#{userMB.usermodel.mdp}"></p:password>
+		<h:message for="password"></h:message>
+	</p:panelGrid>	
+		<p:panel>
+		 <p:commandButton action="#{userMB.inscrire()}" value="valider" update="growl"></p:commandButton>
+	    </p:panel>
+	</h:form>
+
+</p:panel>

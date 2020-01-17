@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html
+ xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+>
+<h:head>
+<title>Insert title here</title>
+</h:head>
+<body>
+<h:form>
+<p:dataTable value="#{produit.produits}" var="prod" id="dt">
+<p:column>
+#{prod.codeProduit}
+<f:facet name="header">Code produit</f:facet>
+</p:column>
+
+<p:column>
+#{prod.nomProduit}
+<f:facet name="header">Nom produit</f:facet>
+</p:column>
+
+<p:column>
+#{prod.prix}
+<f:facet name="header">Prix produit</f:facet>
+</p:column>
+
+<p:column>
+#{prod.dateFabrication}
+<f:facet name="header">Prix produit</f:facet>
+</p:column>
+
+</p:dataTable>
+
+</h:form>
+
+</body>
+</html>

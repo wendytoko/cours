@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="02_webapp_maven_eclipse">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <dependent-module archiveName="01_intro_maven_cmd-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/01_intro_maven_cmd/01_intro_maven_cmd">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="02_webapp_maven_eclipse"/>
+        <property name="java-output-path" value="/02_webapp_maven_eclipse/target/classes"/>
+    </wb-module>
+</project-modules>

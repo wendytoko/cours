@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<!-- ====================================== -->
+	<!--  Déclaration d'un bean de type Module  -->
+	<!-- ======================================= -->
+	<bean id="moduleBean1" class="com.intiformation.springioc.autowiring.bean.Module">
+		<property name="libelle" value="Développement Web"/>
+	</bean>
+	
+	<bean id="module" class="com.intiformation.springioc.autowiring.bean.Module">
+		<property name="libelle" value="Conception MOA"/>
+	</bean>
+	
+	<!-- ======================================== -->
+	<!--  Déclaration d'un bean de type Formateur  -->
+	<!-- ========================================= -->
+	<!--  
+	<bean id="formateurBean" 
+	      class="com.intiformation.springioc.autowiring.bean.Formateur" 
+	      autowire="byName">
+		-->
+		<!-- injection des types simples (String, int, double, ...etc) 
+		<property name="nom" value="Romain Bérubé"/>
+		<property name="domaine" value="Conception et Développement"/>
+		-->
+		
+		<!-- injection de type collaborateur ( réf vers un autre bean) -->
+		<!-- 1. injection explicite  -->
+		<!--  
+		<property name="module" ref="moduleBean1"/>
+		-->
+		
+		<!-- 2. injection automatique -->
+		<!-- 
+			> Par type (byType) : spring recherche un bean du même type 
+			                      que la propriété 'module' et l'injecte
+			                      
+			> Par nom (byName) :  spring recherche un bean ayant le même nom 
+			                      que la propriété 'module' et l'injecte 
+		 
+		
+	</bean> -->
+	
+	<!-- Injection automatique par annotation -->
+	<!-- 
+			> 1. utilisation de l'annotation @Autowired au niveau 
+			     de la classe Formateur (soit sur la prop 'module'/ soir le setter)
+			  
+			> activer la détection des annotations en spring avec 
+			  la balise <context:annotation-config>
+	 -->
+	 <bean id="formateurBean" 
+	      class="com.intiformation.springioc.autowiring.bean.Formateur" >
+	 	<property name="nom" value="Romain Bérubé"/>
+		<property name="domaine" value="Conception et Développement"/>
+	 </bean>
+	 
+	 <!-- Activation de la détection des annotations : @Autowired -->
+	 <context:annotation-config/>
+	
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

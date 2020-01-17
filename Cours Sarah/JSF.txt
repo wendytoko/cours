@@ -1,0 +1,19 @@
+                           Le JSF
+-----------------------------------------------------
+Modèle MVC dans JSF
+
+Modele : ManagedBean. Bean spécifique au framework JSF. Il va stocker et efficher les données. JavaBean : composants(classes java avec attributs(champs de l'interface utilisateur) et getters/setters) qui vont être crées par le serveur. Crée et interprété côté serveur. intermediaire entre IHM (interface utilisateur) et la couche Service (fonctionnalités). 
+Vue : Pages html ou JSP
+Controller : FaceServlet
+
+Composants JSF
+----------------
+
+2 types :
+- corps : pour ajouter des traitements ou composants html
+- html : 
+
+
+Bean : classe coté serveur qui a des ptés, getters et setters
+
+JSF est un framework plus avancé que JSP, il possède énormément de composants

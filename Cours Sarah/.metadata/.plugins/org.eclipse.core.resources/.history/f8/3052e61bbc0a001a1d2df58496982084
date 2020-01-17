@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Les Béatitudes</title>
+</head>
+
+<body>
+<h1>Les béatitudes</h1>
+
+<p> " Heureux ceux qui ont le coeur pur, car ils verront Dieu 
+Heureux les pauvres en esprit,
+car le Royaume des Cieux est à eux.
+Heureux les doux,
+car ils recevront la terre en heritage.
+Heureux les affliges,
+car ils seront consoles.
+Heureux les affames et assoiffes de la justice,
+car ils seront rassasies.
+Heureux les misericordieux,
+car ils obtiendront misericorde.
+Heureux les cœurs purs,
+car ils verront Dieu.
+Heureux les artisans de paix,
+car ils seront appeles fils de Dieu.
+Heureux les persecutes pour la justice,
+car le Royaume des Cieux est a eux.
+Heureux etes-vous si l’on vous insulte, si l’on vous persecute et si l’on vous calomnie de toutes manieres a cause de moi.
+Soyez dans la joie et l’allegresse, car votre recompense sera grande dans les cieux."</p>
+
+
+
+</body>
+</html>

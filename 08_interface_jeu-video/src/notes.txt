@@ -1,0 +1,62 @@
+programme = jeu video |
+----------------------------------------------------------------------------
+
+> classe :
+	- une balle
+	- une raquette
+	- un filet
+	- un joueur
+
+> chaque classe a besoin d'une méthode evoluer()
+pour les faire évoluer dans le jeu.
+
+> représentation graphique pour : balle, filet, raquette
+(pour les voir dans le jeu)
+
+	>> Classe Graphique : dessiner()
+
+> controle au clavier/souris : balle, raquette
+
+	>> Classe Interactif : gererClick() 
+
+>>>>>>>>>>>> PROBLEME : HERITAGE MULTIPLE ENTRE LES CLASSES
+
+Analyse :
+	> raisons : introduction héritage multiple ?
+			> imposer à certaines classe de mettre en oeuvre
+			des méthodes communes
+			
+			> imposer un contenu commun à certaines sous classes
+			en dehors de la relation d'héritage
+				>> notion d'interfaces en java
+
+--------------------------------------------------------------------------------
+
+> Définition d'une interface : mot interface
+
+> une interface ne peut compter que des méthodes abstraites ou encore des constantes 
+
+pas besoin d'ajouter le mot 'abstract' sur les méthodes
+pas besoin 'static final' aux constantes
+
+>> Remarque :
+	en java, on peut déclarer une hierarchie d'interfaces 
+	(héritage entre interfaces = extends)
+
+Evolution des interfaces avec java 8 :
+--------------------------------------------------------------------------------
+
+> Avant java 8 : une interface peut contenir = méthodes abstraites et constantes
+
+> Après java 8 : ajout aux interfaces = méthodes par défaut et des méthodes statiques
+
+
+
+
+
+
+
+
+
+
+

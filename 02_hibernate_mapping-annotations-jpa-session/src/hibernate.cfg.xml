@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+    <session-factory>
+    
+    
+   <!-- ========================================= -->
+   <!-- == Config de la connexion à la bdd ====== -->
+   <!-- ========================================= -->
+  
+         <!--  infos = propriétés hibernate -->
+               
+   <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+   <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/db_cours_jpa_hibernate</property>
+   <property name="hibernate.connection.username">root</property>
+   <property name="hibernate.connection.password">wendy</property>
+   
+   <!-- ========================================= -->
+   <!-- ==== Autres propriétés d'hibernate ====== -->
+   <!-- ========================================= -->
+   
+     <!--  dialecte d'hibernate : la classe qui assure la dialogue avec la BDD -->
+   
+   <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+   
+   <!--  affichage des requetes SQL dans la console -->
+  
+   <property name="show_sql">true</property>
+   
+   <!-- stratégie de génération des tables -->
+   <!-- 
+   	>valeurs de hbm2ddl.auto :
+   		- validate : validation sans faire de changement dans la bdd
+   		- update : met à jour la bdd
+   		- create : création et suppression de l'existant
+   		- create-drop : création de suppression lorsque la sessionFactory est fermée -->
+   
+   <property name="hibernate.hbm2ddl.auto">create</property>
+   
+   <!-- ======================================================= -->
+   <!-- ==== Emplacement des fichiers de mapping hbm.xml ====== -->
+   <!-- ======================================================= -->
+   
+  <mapping class="com.intiformation.hibernate.entity.Personne" />
+   
+   
+    </session-factory>
+    
+    
+</hibernate-configuration>

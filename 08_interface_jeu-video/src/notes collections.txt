@@ -1,0 +1,14 @@
+					Les collections java
+_____________________________________________________________________________________________
+
+>	pour manipuler et gérer de grandes quantités d'informations, 
+en plus des tableaux, on a les collections.
+
+>	collections sont regroupées dans une palette d'interfaces 
+et de classes  
+
+>	les interfaces : décrivent les fonctionnalités disponibles
+
+>	les classes : c'est du concret, elles implémentent et fournissent 
+rééllement les fonctionnalités
+

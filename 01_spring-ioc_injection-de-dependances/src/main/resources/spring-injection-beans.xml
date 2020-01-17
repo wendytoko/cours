@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- 
+	> Fichier de configuration (déclaration) des beans de spring (composants)1
+	> Convention de nommage des fichiers (non obligatoire):
+			>> applicationContext.xml
+	Si appli avec plusieurs couches :
+		>> applicationContext-dao.xml
+		>> applicationContext-service.xml
+
+ -->
+ 
+ <!-- ============================================================= --> 
+ <!-- = Déclaration d'un bean spring de type de la classe Adresse = --> 
+ <!-- ============================================================= --> 
+ 
+ <bean  id="adresseBean" class="com.intiformation.springioc.bean.Adresse">
+ <!--  équivaut à Adresse adresseBean = new Adresse(); -->
+ 
+ 
+ <!--  INITIALISATION DES PROPRIETES DU BEAN : injection de dépendances -->
+ <!--  mode d'injection : injection par setters (modificateurs) par la balise <property> -->
+ <property name="rue">
+ <value>10 route du pavé blanc</value>
+ </property>
+ 
+ <property name="codePostal">
+ <value>92140</value>
+ </property>
+ 
+ <property name="ville" value="Clamart"></property>
+ 
+ 
+ </bean>
+ <!-- LE RESULTAT EST DONC UNE INSTANCE 'adresseBean' dont les propriétés sont initialisées -->
+ 
+</beans>
