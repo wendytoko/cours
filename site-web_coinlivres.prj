@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?PowerDesigner AppLocale="UTF16" ID="{F55EE29B-D5B7-439C-96B9-B067F8079138}" Label="" LastModificationDate="1572365002" Name="site-web_coinlivres" Objects="22" Symbols="0" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" signature="PRJ_MODEL_XML" version="15.1.0.2850"?>
+<!-- Veuillez ne pas modifier ce fichier -->
+
+<Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
+
+<o:RootObject Id="o1">
+<c:Children>
+<o:Project Id="o2">
+<a:ObjectID>F55EE29B-D5B7-439C-96B9-B067F8079138</a:ObjectID>
+<a:Name>site-web_coinlivres</a:Name>
+<a:Code>site-web_coinlivres</a:Code>
+<a:CreationDate>1572340124</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572364982</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:ModelOptionsText>[ModelOptions]
+
+[ModelOptions\Prj options]
+CaseSensitive=No
+DisplayName=Yes
+EnableTrans=No
+EnableRequirements=No
+
+[ModelOptions\Prj options\NamingOptionsTemplates]
+
+[ModelOptions\Prj options\ClssNamingOptions]
+
+[ModelOptions\Prj options\ClssNamingOptions\PRJPCKG]
+
+[ModelOptions\Prj options\ClssNamingOptions\PRJPCKG\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Prj options\ClssNamingOptions\PRJPCKG\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Prj options\ClssNamingOptions\FILO]
+
+[ModelOptions\Prj options\ClssNamingOptions\FILO\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Prj options\ClssNamingOptions\FILO\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Prj options\ClssNamingOptions\FRMEOBJ]
+
+[ModelOptions\Prj options\ClssNamingOptions\FRMEOBJ\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Prj options\ClssNamingOptions\FRMEOBJ\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Prj options\ClssNamingOptions\FRMELNK]
+
+[ModelOptions\Prj options\ClssNamingOptions\FRMELNK\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Prj options\ClssNamingOptions\FRMELNK\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Prj options\ClssNamingOptions\DefaultClass]
+
+[ModelOptions\Prj options\ClssNamingOptions\DefaultClass\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Prj options\ClssNamingOptions\DefaultClass\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion</a:ModelOptionsText>
+<a:Project.Template>1</a:Project.Template>
+<c:Folders>
+<o:ProjectFolder Id="o3">
+<a:ObjectID>2ACAC6D1-4113-483E-8083-2CC7CECBDD95</a:ObjectID>
+<a:Name>1.Exigences (recueil des besoins)</a:Name>
+<a:Code>1.Exigences (recueil des besoins)</a:Code>
+<a:CreationDate>1572340209</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572340232</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<c:ModelsAndFiles>
+<o:ModelDocument Id="o4">
+<a:ObjectID>6DBC3A30-414D-4D89-A955-C66354183DE6</a:ObjectID>
+<a:Name>coinlivres</a:Name>
+<a:Code>coinlivres</a:Code>
+<a:CreationDate>1572340262</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572340624</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Location>file:///%[PRJ_ROOT_DIR]%/coinlivres.mgx</a:Location>
+<a:Extension>mgx</a:Extension>
+<a:ModelDocument.ModelID>4BA6AB12-1171-46A1-BAFE-D21C65FB6F76</a:ModelDocument.ModelID>
+<a:ModelClassID>DABA1E0A-0922-4B05-B7F0-B0BD7A73FD33</a:ModelClassID>
+</o:ModelDocument>
+</c:ModelsAndFiles>
+</o:ProjectFolder>
+<o:ProjectFolder Id="o5">
+<a:ObjectID>BA7A3C17-DE54-4086-ACC5-46827EF426D0</a:ObjectID>
+<a:Name>2. Analyses et conception (UML)</a:Name>
+<a:Code>2. Analyses et conception (UML)</a:Code>
+<a:CreationDate>1572345805</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572362940</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<c:Packages>
+<o:ProjectFolder Id="o6">
+<a:ObjectID>C045F4D9-E19D-44A8-B8FD-541F2BDA7FB7</a:ObjectID>
+<a:Name>2.1. Spécification des exigences selon les cas d&#39;utilisation (use case)</a:Name>
+<a:Code>2.1. Spécification des exigences selon les cas d&#39;utilisation (use case)</a:Code>
+<a:CreationDate>1572345840</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572362960</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<c:Packages>
+<o:ProjectFolder Id="o7">
+<a:ObjectID>E5BC48B1-2A9D-4A33-B1DE-80E56B0833FF</a:ObjectID>
+<a:Name>2.1.2. Description textuelle : cas d&#39;utilisation</a:Name>
+<a:Code>2.1.2. Description textuelle : cas d&#39;utilisation</a:Code>
+<a:CreationDate>1572357378</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572357436</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<c:ModelsAndFiles>
+<o:FileDocument Id="o8">
+<a:ObjectID>290FFB13-21A6-44C3-A261-C9FE58FC9A2B</a:ObjectID>
+<a:Name>description détaillées - uc rechercher des livres</a:Name>
+<a:Code>description_détaillées_-_uc_rechercher_des_livres</a:Code>
+<a:CreationDate>1572357566</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572357566</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Location>file:///%[PRJ_ROOT_DIR]%/description détaillées - uc rechercher des livres.txt</a:Location>
+</o:FileDocument>
+</c:ModelsAndFiles>
+</o:ProjectFolder>
+</c:Packages>
+<c:ModelsAndFiles>
+<o:ModelDocument Id="o9">
+<a:ObjectID>2084DDB3-D405-41B0-9449-85DCF5CD6587</a:ObjectID>
+<a:Name>duc_acteurs</a:Name>
+<a:Code>duc_acteurs</a:Code>
+<a:CreationDate>1572346034</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572346829</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Location>file:///%[PRJ_ROOT_DIR]%/duc_acteurs.moo</a:Location>
+<a:Extension>moo</a:Extension>
+<a:ModelDocument.ModelID>0F489A43-ED93-4AF1-88FA-1BDC21FC45A8</a:ModelDocument.ModelID>
+<a:ModelClassID>18112060-1A4B-11D1-83D9-444553540000</a:ModelClassID>
+</o:ModelDocument>
+<o:ModelDocument Id="o10">
+<a:ObjectID>9FD45DCB-D7EF-4D11-8E43-FA2717F8D572</a:ObjectID>
+<a:Name>duc_internaute_v1.0</a:Name>
+<a:Code>duc_internaute_v1_0</a:Code>
+<a:CreationDate>1572347351</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572365821</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Location>file:///%[PRJ_ROOT_DIR]%/duc_internaute.moo</a:Location>
+<a:Extension>moo</a:Extension>
+<a:ModelDocument.ModelID>8E376DEF-FBA8-4C4E-A454-3A656948FD8C</a:ModelDocument.ModelID>
+<a:ModelClassID>18112060-1A4B-11D1-83D9-444553540000</a:ModelClassID>
+</o:ModelDocument>
+<o:ModelDocument Id="o11">
+<a:ObjectID>538CD3AF-5EE8-42F4-815A-2770E6F3EF40</a:ObjectID>
+<a:Name>duc_employes (webmaster/libraire)</a:Name>
+<a:Code>duc_employes__webmaster_libraire_</a:Code>
+<a:CreationDate>1572348613</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572349015</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Location>file:///%[PRJ_ROOT_DIR]%/duc_employes (webmaster-libraire).moo</a:Location>
+<a:Extension>moo</a:Extension>
+<a:ModelDocument.ModelID>F84DB666-AB5B-42EC-9802-91238B31AE52</a:ModelDocument.ModelID>
+<a:ModelClassID>18112060-1A4B-11D1-83D9-444553540000</a:ModelClassID>
+</o:ModelDocument>
+<o:ModelDocument Id="o12">
+<a:ObjectID>C58D27DE-4478-4910-B9C2-543642725F14</a:ObjectID>
+<a:Name>duc_internaute_v1.1</a:Name>
+<a:Code>duc_internaute_v1_1</a:Code>
+<a:CreationDate>1572349297</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572349418</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Location>file:///%[PRJ_ROOT_DIR]%/duc_internaute_v1.1.moo</a:Location>
+<a:Extension>moo</a:Extension>
+<a:ModelDocument.ModelID>1CFF9A61-6E21-4FD8-AC3F-D4974AC99C2F</a:ModelDocument.ModelID>
+<a:ModelClassID>18112060-1A4B-11D1-83D9-444553540000</a:ModelClassID>
+</o:ModelDocument>
+<o:ModelDocument Id="o13">
+<a:ObjectID>4FEDB487-A7B2-43D6-B869-1166D0C26BA2</a:ObjectID>
+<a:Name>duc_internaute_v1.2</a:Name>
+<a:Code>duc_internaute_v1_2</a:Code>
+<a:CreationDate>1572355153</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572355329</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Location>file:///%[PRJ_ROOT_DIR]%/duc_internaute_v1.2.moo</a:Location>
+<a:Extension>moo</a:Extension>
+<a:ModelDocument.ModelID>405A680A-484E-48A8-A4AB-BE2E1C9208A1</a:ModelDocument.ModelID>
+<a:ModelClassID>18112060-1A4B-11D1-83D9-444553540000</a:ModelClassID>
+</o:ModelDocument>
+</c:ModelsAndFiles>
+</o:ProjectFolder>
+<o:ProjectFolder Id="o14">
+<a:ObjectID>4C1919D6-1FAA-4B0F-A801-A6FE5B32C61F</a:ObjectID>
+<a:Name>2.2 diagrammes de séquences systeme</a:Name>
+<a:Code>2.2 séquences</a:Code>
+<a:CreationDate>1572362965</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572364847</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<c:ModelsAndFiles>
+<o:ModelDocument Id="o15">
+<a:ObjectID>86F6A321-3CEA-4CBC-B890-F7E7ABFD3382</a:ObjectID>
+<a:Name>ds sequences</a:Name>
+<a:Code>ds_sequences</a:Code>
+<a:CreationDate>1572362983</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572363130</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Location>file:///%[PRJ_ROOT_DIR]%/ds sequences.moo</a:Location>
+<a:Extension>moo</a:Extension>
+<a:ModelDocument.ModelID>ADEAABE7-5D72-44CD-9319-31C513E26CFD</a:ModelDocument.ModelID>
+<a:ModelClassID>18112060-1A4B-11D1-83D9-444553540000</a:ModelClassID>
+</o:ModelDocument>
+<o:ModelDocument Id="o16">
+<a:ObjectID>96E17F0D-BBB4-4FEB-885C-3C4398B86B4A</a:ObjectID>
+<a:Name>ds sequence gére le panier</a:Name>
+<a:Code>ds_sequence_gere_le_panier</a:Code>
+<a:CreationDate>1572364790</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572365002</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Location>file:///%[PRJ_ROOT_DIR]%/ds sequence gére le panier.moo</a:Location>
+<a:Extension>moo</a:Extension>
+<a:ModelDocument.ModelID>60DF74B1-E966-404D-9C98-405E0A3A603C</a:ModelDocument.ModelID>
+<a:ModelClassID>18112060-1A4B-11D1-83D9-444553540000</a:ModelClassID>
+</o:ModelDocument>
+</c:ModelsAndFiles>
+</o:ProjectFolder>
+</c:Packages>
+</o:ProjectFolder>
+</c:Folders>
+<c:DependencyLinks>
+<o:DependencyLink Id="o17">
+<a:ObjectID>FB8AD391-CF61-4232-8A1D-28C7ACC3534F</a:ObjectID>
+<a:CreationDate>1572364982</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572364982</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:DependencyLink.Type>Reference</a:DependencyLink.Type>
+<c:InfluentObjects>
+<o:ModelDocument Ref="o15"/>
+</c:InfluentObjects>
+<c:DependentObjects>
+<o:ModelDocument Ref="o16"/>
+</c:DependentObjects>
+</o:DependencyLink>
+</c:DependencyLinks>
+</o:Project>
+</c:Children>
+</o:RootObject>
+
+</Model>

@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?PowerDesigner AppLocale="UTF16" ID="{4BA6AB12-1171-46A1-BAFE-D21C65FB6F76}" Label="" LastModificationDate="1572342772" Name="coinlivres" Objects="29" Symbols="0" Type="{DABA1E0A-0922-4B05-B7F0-B0BD7A73FD33}" signature="RQM_MODEL_XML" version="15.1.0.2850"?>
+<!-- Veuillez ne pas modifier ce fichier -->
+
+<Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
+
+<o:RootObject Id="o1">
+<c:Children>
+<o:Model Id="o2">
+<a:ObjectID>4BA6AB12-1171-46A1-BAFE-D21C65FB6F76</a:ObjectID>
+<a:Name>coinlivres</a:Name>
+<a:Code>coinlivres</a:Code>
+<a:CreationDate>1572340310</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572342290</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:ModelOptionsText>[ModelOptions]
+
+[ModelOptions\Requirements model options]
+CaseSensitive=No
+DisplayName=Yes
+EnableTrans=No
+EnableRequirements=No
+Police du texte=Times New Roman,10,
+Couleur du texte=0 0 0
+Police de titre 1=Times New Roman,16,B
+Couleur de titre 1=0 0 128
+Police de titre 2=Times New Roman,14,B
+Couleur de titre 2=128 0 255
+Police de titre 3=Times New Roman,14,B
+Couleur de titre 3=0 0 255
+Police de titre 4=Times New Roman,13,B
+Couleur de titre 4=255 0 255
+Police de titre 5=Times New Roman,13,IU
+Couleur de titre 5=0 128 0
+Police de titre 6=Times New Roman,13,BIU
+Couleur de titre 6=0 0 0
+Police de titre 7=Times New Roman,13,IU
+Couleur de titre 7=0 0 0
+Police de titre 8=Times New Roman,13,IU
+Couleur de titre 8=0 0 0
+Police de titre 9=Times New Roman,13,IU
+Couleur de titre 9=0 0 0
+
+[ModelOptions\Requirements model options\NamingOptionsTemplates]
+
+[ModelOptions\Requirements model options\ClssNamingOptions]
+
+[ModelOptions\Requirements model options\ClssNamingOptions\RQMPCKG]
+
+[ModelOptions\Requirements model options\ClssNamingOptions\RQMPCKG\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Requirements model options\ClssNamingOptions\RQMPCKG\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Requirements model options\ClssNamingOptions\TERM]
+
+[ModelOptions\Requirements model options\ClssNamingOptions\TERM\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Requirements model options\ClssNamingOptions\TERM\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Requirements model options\ClssNamingOptions\USER]
+
+[ModelOptions\Requirements model options\ClssNamingOptions\USER\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Requirements model options\ClssNamingOptions\USER\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Requirements model options\ClssNamingOptions\GRPE]
+
+[ModelOptions\Requirements model options\ClssNamingOptions\GRPE\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Requirements model options\ClssNamingOptions\GRPE\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Requirements model options\ClssNamingOptions\RQMT]
+
+[ModelOptions\Requirements model options\ClssNamingOptions\RQMT\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=0
+Script=EXG_%-4:Increment%
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Requirements model options\ClssNamingOptions\RQMT\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=0
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Requirements model options\ClssNamingOptions\FILO]
+
+[ModelOptions\Requirements model options\ClssNamingOptions\FILO\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=&quot;\/:*?&lt;&gt;|&quot;
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Requirements model options\ClssNamingOptions\FILO\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_. &quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Requirements model options\ClssNamingOptions\FRMEOBJ]
+
+[ModelOptions\Requirements model options\ClssNamingOptions\FRMEOBJ\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Requirements model options\ClssNamingOptions\FRMEOBJ\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Requirements model options\ClssNamingOptions\FRMELNK]
+
+[ModelOptions\Requirements model options\ClssNamingOptions\FRMELNK\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Requirements model options\ClssNamingOptions\FRMELNK\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Requirements model options\ClssNamingOptions\DefaultClass]
+
+[ModelOptions\Requirements model options\ClssNamingOptions\DefaultClass\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=_
+Script=.convert_name(%Name%,&quot;_&quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion
+
+[ModelOptions\Requirements model options\ClssNamingOptions\DefaultClass\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;_&quot;
+InvldChar=
+AllValid=No
+NoAccent=Yes
+DefaultChar=_
+Script=.convert_code(%Code%,&quot; &quot;)
+ConvTable=
+ConvTablePath=%_HOME%\Fichiers de ressources\Tables de conversion</a:ModelOptionsText>
+<c:DocumentViews>
+<o:RequirementsDocumentView Id="o3">
+<a:ObjectID>72E51C82-A035-4EE7-8F52-8F44BF258271</a:ObjectID>
+<a:Name>VueDocument_1</a:Name>
+<a:Code>VueDocument_1</a:Code>
+<a:CreationDate>1572340310</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572342289</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:DisplayPreferences>[DisplayPreferences]
+
+[DisplayPreferences\ALL]
+
+[DisplayPreferences\General]
+Adjust to text=Yes
+Snap Grid=No
+Constrain Labels=Yes
+Display Grid=No
+Show Page Delimiter=Yes
+Grid size=0
+Graphic unit=2
+Window color=255, 255, 255
+Background image=
+Background mode=8
+Watermark image=
+Watermark mode=8
+Show watermark on screen=No
+Gradient mode=0
+Gradient end color=255, 255, 255
+Show Swimlane=No
+SwimlaneVert=Yes
+TreeVert=No
+CompDark=0
+
+[DisplayPreferences\Object]
+Mode=2
+Trunc Length=40
+Word Length=40
+Word Text=!&quot;&quot;#$%&amp;&#39;()*+,-./:;&lt;=&gt;?@[\]^_`{|}~
+Shortcut IntIcon=Yes
+Shortcut IntLoct=Yes
+Shortcut IntFullPath=No
+Shortcut IntLastPackage=Yes
+Shortcut ExtIcon=Yes
+Shortcut ExtLoct=No
+Shortcut ExtFullPath=No
+Shortcut ExtLastPackage=Yes
+Shortcut ExtIncludeModl=Yes
+EObjShowStrn=Yes
+ExtendedObject.Comment=No
+ExtendedObject.IconPicture=No
+ExtendedObject_SymbolLayout=&lt;Form&gt;[CRLF] &lt;StandardAttribute Name=&quot;Stéréotype&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Nom de l&amp;#39;objet&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF] &lt;Separator Name=&quot;Séparateur&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Commentaire&quot; Attribute=&quot;Comment&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;LEFT&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Icône&quot; Attribute=&quot;IconPicture&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF]&lt;/Form&gt;
+ELnkShowStrn=Yes
+ELnkShowName=Yes
+ExtendedLink_SymbolLayout=&lt;Form&gt;[CRLF] &lt;Form Name=&quot;Centre&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;Stéréotype&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;StandardAttribute Name=&quot;Nom&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;/Form&gt;[CRLF] &lt;Form Name=&quot;Source&quot; &gt;[CRLF] &lt;/Form&gt;[CRLF] &lt;Form Name=&quot;Destination&quot; &gt;[CRLF] &lt;/Form&gt;[CRLF]&lt;/Form&gt;
+FileObject.Stereotype=No
+FileObject.DisplayName=Yes
+FileObject.LocationOrName=No
+FileObject.IconPicture=No
+FileObject.IconMode=Yes
+FileObject_SymbolLayout=&lt;Form&gt;[CRLF] &lt;StandardAttribute Name=&quot;Stéréotype&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;ExclusiveChoice Name=&quot;Choix exclusif&quot; Mandatory=&quot;Yes&quot; Display=&quot;HorizontalRadios&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;Nom&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;StandardAttribute Name=&quot;Emplacement&quot; Attribute=&quot;LocationOrName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;/ExclusiveChoice&gt;[CRLF] &lt;StandardAttribute Name=&quot;Icône&quot; Attribute=&quot;IconPicture&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF]&lt;/Form&gt;
+Display Model Version=Yes
+
+[DisplayPreferences\Symbol]
+
+[DisplayPreferences\Symbol\FRMEOBJ]
+STRNFont=Arial,8,N
+STRNFont color=0, 0, 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+LABLFont=Arial,8,N
+LABLFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=6000
+Height=2000
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=64
+Brush gradient color=192 192 192
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 255 128 128
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\FRMELNK]
+CENTERFont=Arial,8,N
+CENTERFont color=0, 0, 0
+Line style=1
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 128 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\FILO]
+OBJSTRNFont=Arial,8,N
+OBJSTRNFont color=0, 0, 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+LCNMFont=Arial,8,N
+LCNMFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=3600
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0</a:DisplayPreferences>
+<a:PaperSize>(8268, 11693)</a:PaperSize>
+<a:PageMargins>((315,354), (433,354))</a:PageMargins>
+<a:PageOrientation>1</a:PageOrientation>
+<a:PaperSource>15</a:PaperSource>
+<a:ColumnPreferences>NAME -1 TLID 90 HLNK -1 TTID -1 MDOC -1 AUSRS -1 UCOD -1 HASNOTE -1 TMDL -1 RPLA -1 FDSC 480 TIDT -1 CODE 80 PRNT -1 DISPNAME -1 OBJTYPE -1 CDAT -1 CUSR -1 MDAT -1 MUSR -1 OMDAT -1 CLSSNAME -1 FLDR -1 SDSC -1 OLOC -1 PCKG -1 NOTETEXT -1 DESCTEXT -1 LABL -1 GENEORGN -1 STRN -1 MODL -1 COMP -1 MSTP -1 LEVL -1 PRTY 80 WKLD 80 WKD2 -1 WKD3 -1 WKD4 -1 SELD -1 TYPE -1 RISK 80 VRFM -1 STTS 80</a:ColumnPreferences>
+</o:RequirementsDocumentView>
+</c:DocumentViews>
+<c:DefaultDiagram>
+<o:RequirementsDocumentView Ref="o3"/>
+</c:DefaultDiagram>
+<c:Requirements>
+<o:Requirement Id="o4">
+<a:ObjectID>73FCC644-C936-4D7D-896B-07167A269646</a:ObjectID>
+<a:Requirement.Title>Description du projet</a:Requirement.Title>
+<a:Code>EXG_0001</a:Code>
+<a:CreationDate>1572340310</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572341353</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Priority>0</a:Priority>
+<a:Status>4</a:Status>
+<a:Risk>0</a:Risk>
+<a:VerificationMethod/>
+<a:Description>{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\cf1\f0\fs20 - Le site {\cf0{\field{\*\fldinst{HYPERLINK www.coinlivres.com }}{\fldrslt{www.coinlivres.com\ul0\cf0}}}}\f0\fs20  va proposer une gamme tr\&#39;e8s diverse de livres allant de l&#39;informatique, aux sciences, au bricolage etc.\par
+}
+</a:Description>
+</o:Requirement>
+<o:Requirement Id="o5">
+<a:ObjectID>A44C861A-D76C-4351-82BE-D33F4ACA3BB2</a:ObjectID>
+<a:Requirement.Title>Objectif du projet</a:Requirement.Title>
+<a:Code>EXG_0002</a:Code>
+<a:CreationDate>1572340484</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572341358</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Priority>0</a:Priority>
+<a:Status>4</a:Status>
+<a:Risk>0</a:Risk>
+<a:VerificationMethod/>
+<a:Description>{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\cf1\f0\fs20 - permettre aux internautes de :\par
+                                               - rechercher des livres par th\&#39;e8me, mots-cl\&#39;e9s, etc.\par
+                                               - se constituer un panier\par
+                                               - pouvoir commander et payer sur le site \par
+}
+</a:Description>
+</o:Requirement>
+<o:Requirement Id="o6">
+<a:ObjectID>53D7C8C0-4AC5-4CDE-A765-F3FB542F2E50</a:ObjectID>
+<a:Requirement.Title>Exigences Fonctionnelles</a:Requirement.Title>
+<a:Code>EXG_0003</a:Code>
+<a:CreationDate>1572340610</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572341874</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Workload>72</a:Workload>
+<a:Priority>0</a:Priority>
+<a:Status>0</a:Status>
+<a:Risk>0</a:Risk>
+<a:VerificationMethod/>
+<c:Requirements>
+<o:Requirement Id="o7">
+<a:ObjectID>60C571B0-DB52-41C3-B4D3-11D8AC53357A</a:ObjectID>
+<a:Requirement.Title>Rechercher des ouvrages</a:Requirement.Title>
+<a:Code>EXG_0004</a:Code>
+<a:CreationDate>1572340796</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572341449</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Workload>72</a:Workload>
+<a:Priority>0</a:Priority>
+<a:Status>2</a:Status>
+<a:Risk>0</a:Risk>
+<a:VerificationMethod/>
+<c:Requirements>
+<o:Requirement Id="o8">
+<a:ObjectID>07A74050-BF89-4B0E-8DCD-E68FDBF427DC</a:ObjectID>
+<a:Requirement.Title>recherche1</a:Requirement.Title>
+<a:Code>EXG_0005</a:Code>
+<a:CreationDate>1572340834</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572341371</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Workload>35</a:Workload>
+<a:Priority>1</a:Priority>
+<a:Status>2</a:Status>
+<a:Risk>3</a:Risk>
+<a:VerificationMethod/>
+<a:Description>{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\cf1\f0\fs20 l&#39;internaute peut trouver le plus rapidement possible des livres recherch\&#39;e9s dans l&#39;ensemble du catalogue\par
+}
+</a:Description>
+</o:Requirement>
+<o:Requirement Id="o9">
+<a:ObjectID>2BF34C5A-5867-4D56-827F-7101036AD94E</a:ObjectID>
+<a:Requirement.Title>recherche2</a:Requirement.Title>
+<a:Code>EXG_0006</a:Code>
+<a:CreationDate>1572340936</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572341383</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Workload>21</a:Workload>
+<a:Priority>1</a:Priority>
+<a:Status>2</a:Status>
+<a:Risk>3</a:Risk>
+<a:VerificationMethod/>
+<a:Description>{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\cf1\f0\fs20 l&#39;internaute pourra saisir un crit\&#39;e8re (titre, auteur, ISBN, etc.) ou plusieurs crit\&#39;e8res\par
+}
+</a:Description>
+</o:Requirement>
+<o:Requirement Id="o10">
+<a:ObjectID>D2606D8D-E72C-4611-A888-2AFB1A22DA27</a:ObjectID>
+<a:Requirement.Title>recherche3</a:Requirement.Title>
+<a:Code>EXG_0007</a:Code>
+<a:CreationDate>1572340995</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572341383</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Workload>7</a:Workload>
+<a:Priority>1</a:Priority>
+<a:Status>2</a:Status>
+<a:Risk>3</a:Risk>
+<a:VerificationMethod/>
+<a:Description>{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\cf1\f0\fs20 les r\&#39;e9sultats de la recherche seront disponibles sur une page particuli\&#39;e8re, et devront pouvoir \&#39;eatre facilement parcourus et reclass\&#39;e9s.\par
+}
+</a:Description>
+</o:Requirement>
+<o:Requirement Id="o11">
+<a:ObjectID>D6801427-A4FC-4BFF-AB80-37148FD2CA2E</a:ObjectID>
+<a:Requirement.Title>recherche4</a:Requirement.Title>
+<a:Code>EXG_0008</a:Code>
+<a:CreationDate>1572341383</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572341637</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Workload>9</a:Workload>
+<a:Priority>1</a:Priority>
+<a:Status>2</a:Status>
+<a:Risk>3</a:Risk>
+<a:VerificationMethod/>
+<a:Description>{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\cf1\f0\fs20 chaque livre vendu sur le site sera pr\&#39;e9sent\&#39;e9 en d\&#39;e9tails sur sa propre page avec une image pour que l&#39;internaute puisse agrandir son prix, sa disponibilit\&#39;e9, des commentaires de lectures,  table des mati\&#39;e8res et des extraits de chapitres etc\par
+}
+</a:Description>
+</o:Requirement>
+</c:Requirements>
+</o:Requirement>
+<o:Requirement Id="o12">
+<a:ObjectID>32908000-947E-4717-869E-89C7B0B5160C</a:ObjectID>
+<a:Requirement.Title>Gérer le panier</a:Requirement.Title>
+<a:Code>EXG_0009</a:Code>
+<a:CreationDate>1572341637</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572341750</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Priority>0</a:Priority>
+<a:Status>0</a:Status>
+<a:Risk>0</a:Risk>
+<a:VerificationMethod/>
+<c:Requirements>
+<o:Requirement Id="o13">
+<a:ObjectID>F893F191-1453-423D-AAC1-B9A187444F18</a:ObjectID>
+<a:Requirement.Title>panier1</a:Requirement.Title>
+<a:Code>EXG_0010</a:Code>
+<a:CreationDate>1572341690</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572341739</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Priority>0</a:Priority>
+<a:Status>0</a:Status>
+<a:Risk>0</a:Risk>
+<a:VerificationMethod/>
+<a:Description>{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\cf1\f0\fs20 lorsque l&#39;internaute est interess\&#39;e9 par un livre, il peut l&#39;ajouter dans le panier\par
+}
+</a:Description>
+</o:Requirement>
+<o:Requirement Id="o14">
+<a:ObjectID>033E1575-FBF9-428A-B1E3-497036BBCB23</a:ObjectID>
+<a:Requirement.Title>panier2</a:Requirement.Title>
+<a:Code>EXG_0011</a:Code>
+<a:CreationDate>1572341739</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572341835</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Priority>0</a:Priority>
+<a:Status>0</a:Status>
+<a:Risk>0</a:Risk>
+<a:VerificationMethod/>
+<a:Description>{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\cf1\f0\fs20 il doit pouvoir \&#39;e0 tout moment en ajouter, en supprimer ou encore en modifier la quantit\&#39;e9\par
+}
+</a:Description>
+</o:Requirement>
+</c:Requirements>
+</o:Requirement>
+<o:Requirement Id="o15">
+<a:ObjectID>C19F0A71-1800-452F-BBFF-F7A7FD6EEAE9</a:ObjectID>
+<a:Requirement.Title>Gérer la commande</a:Requirement.Title>
+<a:Code>EXG_0012</a:Code>
+<a:CreationDate>1572341835</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572342102</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Priority>0</a:Priority>
+<a:Status>0</a:Status>
+<a:Risk>0</a:Risk>
+<a:VerificationMethod/>
+<c:Requirements>
+<o:Requirement Id="o16">
+<a:ObjectID>90127D1E-3F21-4651-818C-906AF1D7D7F1</a:ObjectID>
+<a:Requirement.Title>commande1</a:Requirement.Title>
+<a:Code>EXG_0013</a:Code>
+<a:CreationDate>1572341884</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572342011</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Priority>0</a:Priority>
+<a:Status>0</a:Status>
+<a:Risk>0</a:Risk>
+<a:VerificationMethod/>
+<a:Description>{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\cf1\f0\fs20\&#39;e0 tout moment l&#39;internaute doit pouvoir acc\&#39;e9der au formulaire de bon de commande\par
+}
+</a:Description>
+</o:Requirement>
+<o:Requirement Id="o17">
+<a:ObjectID>CB0E96A2-8023-4F06-AB89-F3FB0AB854A4</a:ObjectID>
+<a:Requirement.Title>commande2</a:Requirement.Title>
+<a:Code>EXG_0014</a:Code>
+<a:CreationDate>1572342011</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572342044</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Priority>0</a:Priority>
+<a:Status>0</a:Status>
+<a:Risk>0</a:Risk>
+<a:VerificationMethod/>
+<a:Description>{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\cf1\f0\fs20 le syst\&#39;e8me doit \&#39;eatre capable d&#39;imprimer un bon de commande\par
+}
+</a:Description>
+</o:Requirement>
+<o:Requirement Id="o18">
+<a:ObjectID>9C5FC5CE-696C-4181-9974-9A09F04DED93</a:ObjectID>
+<a:Requirement.Title>commande3</a:Requirement.Title>
+<a:Code>EXG_0015</a:Code>
+<a:CreationDate>1572342044</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572342096</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Priority>0</a:Priority>
+<a:Status>0</a:Status>
+<a:Risk>0</a:Risk>
+<a:VerificationMethod/>
+<a:Description>{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\cf1\f0\fs20 le client doit \&#39;eatre capable de suivre ses commandes r\&#39;e9centes, les modifier avant exp\&#39;e9dition\par
+}
+</a:Description>
+</o:Requirement>
+<o:Requirement Id="o19">
+<a:ObjectID>89C28BA0-93AC-4E4E-8E15-8B5E863EDC0A</a:ObjectID>
+<a:Requirement.Title>commande4</a:Requirement.Title>
+<a:Code>EXG_0016</a:Code>
+<a:CreationDate>1572342096</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572342187</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Priority>0</a:Priority>
+<a:Status>0</a:Status>
+<a:Risk>0</a:Risk>
+<a:VerificationMethod/>
+<a:Description>{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\cf1\f0\fs20 le client devvra pouvoir g\&#39;e9rer son compte, cad, modifier ses coordonn\&#39;e9es, ajouter des adresses etc.\par
+}
+</a:Description>
+</o:Requirement>
+</c:Requirements>
+</o:Requirement>
+</c:Requirements>
+</o:Requirement>
+<o:Requirement Id="o20">
+<a:ObjectID>248FC674-5EBF-48C3-8D1B-71FEE4017E0D</a:ObjectID>
+<a:Requirement.Title>Exigences non fonctionnelles</a:Requirement.Title>
+<a:Code>EXG_0017</a:Code>
+<a:CreationDate>1572342289</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572342717</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Priority>0</a:Priority>
+<a:Status>0</a:Status>
+<a:Risk>0</a:Risk>
+<a:VerificationMethod/>
+<c:Requirements>
+<o:Requirement Id="o21">
+<a:ObjectID>19C51F59-58F4-4D55-B628-5B3EB0E90834</a:ObjectID>
+<a:Requirement.Title>Qualité</a:Requirement.Title>
+<a:Code>EXG_0018</a:Code>
+<a:CreationDate>1572342306</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572342398</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Priority>0</a:Priority>
+<a:Status>0</a:Status>
+<a:Risk>0</a:Risk>
+<a:VerificationMethod/>
+<c:Requirements>
+<o:Requirement Id="o22">
+<a:ObjectID>66644018-18A1-42D2-9ACD-933637632877</a:ObjectID>
+<a:Requirement.Title>display1</a:Requirement.Title>
+<a:Code>EXG_0019</a:Code>
+<a:CreationDate>1572342313</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572342388</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Priority>0</a:Priority>
+<a:Status>0</a:Status>
+<a:Risk>0</a:Risk>
+<a:VerificationMethod/>
+<a:Description>{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\cf1\f0\fs20 Ergonomie du site doit \&#39;eatre sobre et efficace\par
+}
+</a:Description>
+</o:Requirement>
+<o:Requirement Id="o23">
+<a:ObjectID>5482956E-FE10-4DA2-9EE4-5D7C95FFFB0B</a:ObjectID>
+<a:Requirement.Title>display2</a:Requirement.Title>
+<a:Code>EXG_0020</a:Code>
+<a:CreationDate>1572342388</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572342413</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Priority>0</a:Priority>
+<a:Status>0</a:Status>
+<a:Risk>0</a:Risk>
+<a:VerificationMethod/>
+<a:Description>{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\cf1\f0\fs20 l&#39;aide en ligne doit \&#39;eatre compl\&#39;e8te\par
+}
+</a:Description>
+</o:Requirement>
+</c:Requirements>
+</o:Requirement>
+<o:Requirement Id="o24">
+<a:ObjectID>13D9A1B9-E1AF-4CB4-9B47-7E7FE9B5CD2F</a:ObjectID>
+<a:Requirement.Title>Performance</a:Requirement.Title>
+<a:Code>EXG_0021</a:Code>
+<a:CreationDate>1572342413</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572342612</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Priority>0</a:Priority>
+<a:Status>0</a:Status>
+<a:Risk>0</a:Risk>
+<a:VerificationMethod/>
+<c:Requirements>
+<o:Requirement Id="o25">
+<a:ObjectID>A2BF3AB7-50A5-44C9-8074-553E9CB04B96</a:ObjectID>
+<a:Requirement.Title>performance1</a:Requirement.Title>
+<a:Code>EXG_0022</a:Code>
+<a:CreationDate>1572342431</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572342532</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Priority>0</a:Priority>
+<a:Status>0</a:Status>
+<a:Risk>0</a:Risk>
+<a:VerificationMethod/>
+<a:Description>{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\cf1\f0\fs20 le site doit pouvoir g\&#39;e9rer les comptes de plus de 10 000 clients\par
+}
+</a:Description>
+</o:Requirement>
+<o:Requirement Id="o26">
+<a:ObjectID>3C5F83DF-D081-4429-9886-091197B54EB0</a:ObjectID>
+<a:Requirement.Title>performance2</a:Requirement.Title>
+<a:Code>EXG_0023</a:Code>
+<a:CreationDate>1572342532</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572342559</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Priority>0</a:Priority>
+<a:Status>0</a:Status>
+<a:Risk>0</a:Risk>
+<a:VerificationMethod/>
+<a:Description>{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\cf1\f0\fs20 le site doit supporter plus de 1000 connexions simultan\&#39;e9es\par
+}
+</a:Description>
+</o:Requirement>
+<o:Requirement Id="o27">
+<a:ObjectID>0CD7452D-4673-4E7E-953A-A7C53BB7F269</a:ObjectID>
+<a:Requirement.Title>performance3</a:Requirement.Title>
+<a:Code>EXG_0024</a:Code>
+<a:CreationDate>1572342559</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572342605</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Priority>0</a:Priority>
+<a:Status>0</a:Status>
+<a:Risk>0</a:Risk>
+<a:VerificationMethod/>
+<a:Description>{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\cf1\f0\fs20 le catalogue d&#39;ouvrage doit pouvoir comprendre plus de 1 000 000 de titres\par
+}
+</a:Description>
+</o:Requirement>
+<o:Requirement Id="o28">
+<a:ObjectID>09C0F49C-30DB-4301-A313-B6D263824AE7</a:ObjectID>
+<a:Requirement.Title>performance4</a:Requirement.Title>
+<a:Code>EXG_0025</a:Code>
+<a:CreationDate>1572342605</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572342631</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Priority>0</a:Priority>
+<a:Status>0</a:Status>
+<a:Risk>0</a:Risk>
+<a:VerificationMethod/>
+<a:Description>{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\cf1\f0\fs20 aucune recherche ne doit prendre plus de deux secondes\par
+}
+</a:Description>
+</o:Requirement>
+</c:Requirements>
+</o:Requirement>
+<o:Requirement Id="o29">
+<a:ObjectID>61EB7BA6-2FC4-4FB0-ABB8-89BDEA934DBD</a:ObjectID>
+<a:Requirement.Title>Sécurité</a:Requirement.Title>
+<a:Code>EXG_0026</a:Code>
+<a:CreationDate>1572342705</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572342728</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Priority>0</a:Priority>
+<a:Status>0</a:Status>
+<a:Risk>0</a:Risk>
+<a:VerificationMethod/>
+<c:Requirements>
+<o:Requirement Id="o30">
+<a:ObjectID>037D62BE-FF0C-4222-9E19-3CB31C5490C1</a:ObjectID>
+<a:Requirement.Title>sécurité1</a:Requirement.Title>
+<a:Code>EXG_0027</a:Code>
+<a:CreationDate>1572342728</a:CreationDate>
+<a:Creator>IN-MP-040</a:Creator>
+<a:ModificationDate>1572342772</a:ModificationDate>
+<a:Modifier>IN-MP-040</a:Modifier>
+<a:Priority>0</a:Priority>
+<a:Status>0</a:Status>
+<a:Risk>0</a:Risk>
+<a:VerificationMethod/>
+<a:Description>{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\cf1\f0\fs20 l&#39;envoi des donn\&#39;e9es doit se faire d&#39;une mani\&#39;e8re crypt\&#39;e9e afin de garantir la s\&#39;e9curisation et la confidentialit\&#39;e9 des \&#39;e9changes\par
+}
+</a:Description>
+</o:Requirement>
+</c:Requirements>
+</o:Requirement>
+</c:Requirements>
+</o:Requirement>
+</c:Requirements>
+</o:Model>
+</c:Children>
+</o:RootObject>
+
+</Model>

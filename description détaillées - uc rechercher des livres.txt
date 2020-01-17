@@ -1,0 +1,87 @@
+----------------------------------------------------------------
+Fiche : description détaillée - use case rechercher des livres
+----------------------------------------------------------------
+
+Acteur principal
+----------------
+L'internaute, qu'il soit déjà client ou  simple visiteur
+
+Objectifs
+---------
+L'internaute veut trouver le plus rapidement possible un livre
+dans l'ensemble du catalogue. il veut également rechercher
+avec des critères variés 
+
+Pré-conditions
+--------------
+Le catalogue est disponible (voir le cas d'utilisation maintenir le catalogue)
+
+Post-conditions
+---------------
+L'internaute a trouvé le(s) livre(s) en particulier qu'il cherchait
+
+scénario nominal
+----------------
+
+	1. L'internaute lance une recherche rapide à partir de mots clés 
+           : un thème, un titre, auteur etc.
+
+	2. le site affiche une page de résultats. Les livres sont classés par
+          date de parution, le plus récent en premier
+	
+	3. l'internaute sélectionne un livre
+
+	4. le site lui présente une fiche détaillée du livre sélectionné
+	on y trouve en particulier (voir figure - maquette)
+	- une image
+	- ses titres, sous-titres, auteur, date de parution, langue, etc.
+	- prix et disponibilité
+	- commentaires de lectures, extraits de chapitres ...
+
+Alternatives
+------------
+
+	1.1. l'internaute n'a pas d'idée et préfère flaner dans les rayons. Pour cela,
+            le site lui propose un ensemble de pages telles que : 
+            les nouveautés, meilleures ventes etc
+
+ 		1.1.1. l'internaute navigue dans ses pages et peut enchainer sur l'étape 3
+                        du scénario nominal
+
+	1.2. l'internaute choisit d'effectuer une recherche avancée
+
+		1.2.1. l'internaute accède à un formulaire spécialisé lui permettant 
+		de combiner plusieurs critères de recherche : par mot-clés, titre, auteur etc
+
+	2.1. le site n'a pas trouvé de livres correspondant à la recherche
+
+		2.1.1. le site signale l'échec à l'internaute et lui propose d'éffectuer
+			une nouvelle recherche
+
+			le use case rédemarre à l'étape 1 du scénario nominal
+
+	2.2. le site a trouvé de très nombreux livres
+
+		2.2.1. le site signale le nombre de livres à l'internaute et lui affiche
+                     une 1ère page de résultats
+
+		2.2.2. l'internaute navigue dans ces pages et enchaine éventuellement sur 
+			l'étape 3 du scénario nominal
+
+	2.3 l'internaute n'est pas interessé par les résultats
+
+		2.3.1. l'internaute revient à l'étape 1 du scénario nominal pour lancer 
+                     une nouvelle recherche
+
+		2.3.2. l'internaute adandonne la recherche, le cas d'utilisation se 
+                     termine en échec
+
+	4.1 l'internaute est interessé par le résultat et met le livre dans le panier
+		4.1.1 le site lui affiche le panier (voir le use case gérer son panier)
+
+Exigences Supplémentaires
+--------------------------
+	> la recherche doit être la plus rapide possible : 90% des requêtes doivent aboutir en 
+        moins de 3 secondes
+
+
