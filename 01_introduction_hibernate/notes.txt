@@ -1,0 +1,66 @@
+Framework Hibernate
+--------------------
+
+1.Intro
+----------
+
+> JPA est une norme (spécification). Elle ne permet pas d'accéder aux données. Elle a besoin d'un provider
+
+> Hibernate est le provider (implémentation concrète de JPA) portée par la société JBoss
+
+> Hibernate répond aux normes de JPA et possédant toutes les fonctionnalités définies par la norme
+et possédant quelques spécificités qui lui sont propres
+
+> Hibernate est un ORM (prend en charge la mapping et la connexion à la bdd)
+
+2. Architecture de Hibernate
+------------------------------
+                                      | Transaction |
+                                             |
+|Configuration| --> |Session factory| -> |Session| <-------> [BDD]
+                                             |
+                                         | Query |                                                                                           
+	                                   
+JPA                               Hibernate
+-----             <======>        -----------
+Persistance                     Configuration
+EntityManagerFactory            SessionFactory
+EntityManager                   Session
+EntityTransaction               Transaction
+Query                           Query
+
+JPQL                            HQL (Hibernate Query Language)
+
+persistance.xml                 hibernate.cfg.xml
+
+3. Mise en oeuvre d'Hibernate
+-----------------------------
+
+> jars à recup sur le site web hibernate.org
+> Configuration du mappin hibernate :
+	> fichier de mapping (xml)
+	> nom du fichier <nom classe>.hbm.xml
+	> Exemple : Personne --> Personne.hbm.xml
+	> le fichier doit se situer dans le même emplacement que la classe à mapper
+
+> propriétés de configuration (eq persistence.xml en jpa) :
+	> fichier : hibernate.cfg.xml
+		> les infos de connexions a la bdd
+		> les classes mappés
+		> des ptés hibernate (type affichage des requetes sql dans la console) 
+		
+4. API Criteria
+---------------
+
+> avant Hibernate 5 => API Criteria propre à Hibernate
+
+> Avec Hibernate 5 => utilisation de l'API Criteria de JPA
+
+5. Implémentation d'Hibernate avec JPA :
+> En tant que fournisseur de JPA, Hibernate implémente les spécification de l'API JPA
+C'est comme si Hibernate héritait de l'Interface JPA car il a accès à tout de JPA
+
+Par conséquent, il y a 3 façons d'implémenter Hibernate :
+	> 1. 100% Hibernate => Mapping avec hbm.xml + session
+	> 2. 50/50 => Mapping avec annotations JPA + session pour acces à la BDD
+	> 3. 100% JPA => Mapping annotations JPA (@Entity) + entityManager
