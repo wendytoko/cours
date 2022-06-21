@@ -70,7 +70,7 @@
     <javax.servlet.api.version>4.0.1</javax.servlet.api.version>
     <jstl.version>1.2</jstl.version>
     <jsp.version>2.2</jsp.version>
-    <mysql.connector.version>5.1.47</mysql.connector.version>
+    <mysql.connector.version>8.0.28</mysql.connector.version>
     <hibernate.version>5.0.5.Final</hibernate.version>
     
   </properties>
